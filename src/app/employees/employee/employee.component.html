@@ -1,0 +1,19 @@
+<form #employeeForm="ngForm">
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input class="form-control" name="name" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.name" placeholder="Full Name"/>
+    </div>
+    <div class="form-group">
+        <label for="position">Position</label>
+        <input class="form-control" name="position" #position="ngModel" [(ngModel)]="employeeService.selectedEmployee.position" placeholder="Position"/>
+    </div>
+    <div class="form-group">
+        <label for="office">Office</label>
+        <input class="form-control" nmae="office" #office="ngModel" [(ngModel)]="employeeService.selectedEmployee.office" placeholder="Office"/>
+    </div>
+    <div class="form-group">
+        <label for="salary">Salary</label>
+        <input class="form-control" nmae="salary" #salary="ngModel" [(ngModel)]="employeeService.selectedEmployee.salary" placeholder="Salary"/>
+    </div>
+
+</form>
